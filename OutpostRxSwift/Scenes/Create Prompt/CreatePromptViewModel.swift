@@ -27,7 +27,7 @@ struct CreatePromptEngine {
         
         self.promptDataController = promptDataController
         self.sceneCoordinator = coordinator
-        
+   
         self.promptInputIsValid = Observable.combineLatest(title.asObservable(), body.asObservable(), resultSelector: { (title, body) in
             return title.count > 10 && body.count > 10
         })

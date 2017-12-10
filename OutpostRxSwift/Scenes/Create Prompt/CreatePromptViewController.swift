@@ -18,8 +18,10 @@ class CreatePromptViewController: UIViewController, BindableType {
         super.viewDidLoad()
         doneButton = UIBarButtonItem(title: "Done", style: .done, target: nil, action: nil)
         self.navigationItem.rightBarButtonItem = doneButton
+        
         setupTitleTextView()
         setupBodyTextView()
+        
         doneButton.rx.tap
             .withLatestFrom(engine.promptInput)
             .bind(to: engine.createPrompt.inputs)
@@ -46,7 +48,7 @@ class CreatePromptViewController: UIViewController, BindableType {
             .bind(to: engine.title)
             .disposed(by: disposeBag)
         
-        titleTextView.rx.text
+        bodyTextView.rx.text
             .orEmpty
             .bind(to: engine.body)
             .disposed(by: disposeBag)
