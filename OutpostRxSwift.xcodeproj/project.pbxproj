@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		980CB9301FD9E76500D3061A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CB92F1FD9E76500D3061A /* AppDelegate.swift */; };
-		980CB9321FD9E76500D3061A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CB9311FD9E76500D3061A /* ViewController.swift */; };
-		980CB9351FD9E76500D3061A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980CB9331FD9E76500D3061A /* Main.storyboard */; };
 		980CB9371FD9E76500D3061A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980CB9361FD9E76500D3061A /* Assets.xcassets */; };
 		980CB93A1FD9E76500D3061A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980CB9381FD9E76500D3061A /* LaunchScreen.storyboard */; };
 		980CB9451FD9E76600D3061A /* OutpostRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CB9441FD9E76600D3061A /* OutpostRxSwiftTests.swift */; };
 		980CB9501FD9E76600D3061A /* OutpostRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CB94F1FD9E76600D3061A /* OutpostRxSwiftUITests.swift */; };
+		982A05901FD9EC6D00CBCCE0 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982A058F1FD9EC6D00CBCCE0 /* Scene.swift */; };
+		982A05941FD9ECC600CBCCE0 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982A05931FD9ECC600CBCCE0 /* SceneCoordinator.swift */; };
+		982A059A1FD9EEB100CBCCE0 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982A05991FD9EEB100CBCCE0 /* Prompt.swift */; };
+		982A059C1FD9EFCD00CBCCE0 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982A059B1FD9EFCD00CBCCE0 /* BindableType.swift */; };
+		982A059E1FD9F08600CBCCE0 /* RealmServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982A059D1FD9F08600CBCCE0 /* RealmServiceType.swift */; };
+		984363ED1FDDB4220057618C /* CreatePromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984363EC1FDDB4210057618C /* CreatePromptViewController.swift */; };
+		984363EF1FDDB48A0057618C /* CreatePromptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984363EE1FDDB48A0057618C /* CreatePromptViewModel.swift */; };
+		9844B03A1FDA2BD80058C62E /* PromptListEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844B0391FDA2BD80058C62E /* PromptListEngine.swift */; };
+		9844B03C1FDA2FCE0058C62E /* PromptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844B03B1FDA2FCD0058C62E /* PromptListViewController.swift */; };
+		9844B03E1FDA38A80058C62E /* PromptTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844B03D1FDA38A80058C62E /* PromptTableCell.swift */; };
+		9844B0401FDA38D00058C62E /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844B03F1FDA38D00058C62E /* PromptView.swift */; };
+		98A1AFB61FDB1F3100294013 /* PromptDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1AFB51FDB1F3100294013 /* PromptDataController.swift */; };
+		98A1AFBD1FDB243D00294013 /* PromptDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1AFBC1FDB243D00294013 /* PromptDetailViewController.swift */; };
+		98A1AFBF1FDB246900294013 /* PromptDetailEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1AFBE1FDB246900294013 /* PromptDetailEngine.swift */; };
+		98A1AFC21FDB2B2600294013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1AFC11FDB2B2600294013 /* LoginViewController.swift */; };
+		98A1AFC41FDB2B3100294013 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1AFC31FDB2B3100294013 /* LoginViewModel.swift */; };
+		98A1AFC61FDB370800294013 /* RealmLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1AFC51FDB370800294013 /* RealmLoginManager.swift */; };
+		98CAC8F81FDC6ACF00F0CC09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAC8F71FDC6ACF00F0CC09 /* User.swift */; };
+		98CAC8FA1FDC6CB400F0CC09 /* UserDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAC8F91FDC6CB400F0CC09 /* UserDataController.swift */; };
+		C94A368CC8295220188FEF60 /* Pods_OutpostRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AC8C8258BA6A1B75998F63 /* Pods_OutpostRxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C904DC20D6CF666FCF367A /* Pods-OutpostRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutpostRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutpostRxSwift/Pods-OutpostRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		980CB92C1FD9E76500D3061A /* OutpostRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutpostRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		980CB92F1FD9E76500D3061A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		980CB9311FD9E76500D3061A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		980CB9341FD9E76500D3061A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		980CB9361FD9E76500D3061A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980CB9391FD9E76500D3061A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980CB93B1FD9E76500D3061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +64,27 @@
 		980CB94B1FD9E76600D3061A /* OutpostRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutpostRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		980CB94F1FD9E76600D3061A /* OutpostRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutpostRxSwiftUITests.swift; sourceTree = "<group>"; };
 		980CB9511FD9E76600D3061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982A058F1FD9EC6D00CBCCE0 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		982A05931FD9ECC600CBCCE0 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		982A05991FD9EEB100CBCCE0 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		982A059B1FD9EFCD00CBCCE0 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		982A059D1FD9F08600CBCCE0 /* RealmServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceType.swift; sourceTree = "<group>"; };
+		984363EC1FDDB4210057618C /* CreatePromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePromptViewController.swift; sourceTree = "<group>"; };
+		984363EE1FDDB48A0057618C /* CreatePromptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePromptViewModel.swift; sourceTree = "<group>"; };
+		9844B0391FDA2BD80058C62E /* PromptListEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptListEngine.swift; sourceTree = "<group>"; };
+		9844B03B1FDA2FCD0058C62E /* PromptListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptListViewController.swift; sourceTree = "<group>"; };
+		9844B03D1FDA38A80058C62E /* PromptTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTableCell.swift; sourceTree = "<group>"; };
+		9844B03F1FDA38D00058C62E /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		98A1AFB51FDB1F3100294013 /* PromptDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptDataController.swift; sourceTree = "<group>"; };
+		98A1AFBC1FDB243D00294013 /* PromptDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptDetailViewController.swift; sourceTree = "<group>"; };
+		98A1AFBE1FDB246900294013 /* PromptDetailEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptDetailEngine.swift; sourceTree = "<group>"; };
+		98A1AFC11FDB2B2600294013 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98A1AFC31FDB2B3100294013 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		98A1AFC51FDB370800294013 /* RealmLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLoginManager.swift; sourceTree = "<group>"; };
+		98CAC8F71FDC6ACF00F0CC09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		98CAC8F91FDC6CB400F0CC09 /* UserDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataController.swift; sourceTree = "<group>"; };
+		A14735777135C5E5A6B90CB3 /* Pods-OutpostRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutpostRxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutpostRxSwift/Pods-OutpostRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		E0AC8C8258BA6A1B75998F63 /* Pods_OutpostRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutpostRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94A368CC8295220188FEF60 /* Pods_OutpostRxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		498D06F6052733859561B7D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13C904DC20D6CF666FCF367A /* Pods-OutpostRxSwift.debug.xcconfig */,
+				A14735777135C5E5A6B90CB3 /* Pods-OutpostRxSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BC72100A19ECFDAD3215CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0AC8C8258BA6A1B75998F63 /* Pods_OutpostRxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		980CB9231FD9E76500D3061A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +137,8 @@
 				980CB9431FD9E76600D3061A /* OutpostRxSwiftTests */,
 				980CB94E1FD9E76600D3061A /* OutpostRxSwiftUITests */,
 				980CB92D1FD9E76500D3061A /* Products */,
+				498D06F6052733859561B7D9 /* Pods */,
+				5BC72100A19ECFDAD3215CF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				980CB92F1FD9E76500D3061A /* AppDelegate.swift */,
-				980CB9311FD9E76500D3061A /* ViewController.swift */,
-				980CB9331FD9E76500D3061A /* Main.storyboard */,
+				98A1AFB31FDB1F0100294013 /* Scene Transition Resources */,
+				98A1AFBA1FDB200C00294013 /* Realm Services */,
+				98A1AFB41FDB1F1D00294013 /* Models */,
+				98A1AFB91FDB1FF600294013 /* Data Controllers */,
+				98A1AFAF1FDB1E8C00294013 /* Scenes */,
 				980CB9361FD9E76500D3061A /* Assets.xcassets */,
 				980CB9381FD9E76500D3061A /* LaunchScreen.storyboard */,
 				980CB93B1FD9E76500D3061A /* Info.plist */,
@@ -125,6 +186,108 @@
 			path = OutpostRxSwiftUITests;
 			sourceTree = "<group>";
 		};
+		984363EB1FDDB3F60057618C /* Create Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				984363EC1FDDB4210057618C /* CreatePromptViewController.swift */,
+				984363EE1FDDB48A0057618C /* CreatePromptViewModel.swift */,
+			);
+			path = "Create Prompt";
+			sourceTree = "<group>";
+		};
+		98A1AFAF1FDB1E8C00294013 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				98A1AFC01FDB2B0D00294013 /* Login */,
+				984363EB1FDDB3F60057618C /* Create Prompt */,
+				98A1AFB01FDB1E9700294013 /* Prompt List */,
+				98A1AFBB1FDB241000294013 /* Prompt Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		98A1AFB01FDB1E9700294013 /* Prompt List */ = {
+			isa = PBXGroup;
+			children = (
+				98A1AFB11FDB1EB100294013 /* Views */,
+				98A1AFB21FDB1EC400294013 /* Cells */,
+				9844B03B1FDA2FCD0058C62E /* PromptListViewController.swift */,
+				9844B0391FDA2BD80058C62E /* PromptListEngine.swift */,
+			);
+			name = "Prompt List";
+			sourceTree = "<group>";
+		};
+		98A1AFB11FDB1EB100294013 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9844B03F1FDA38D00058C62E /* PromptView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98A1AFB21FDB1EC400294013 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9844B03D1FDA38A80058C62E /* PromptTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		98A1AFB31FDB1F0100294013 /* Scene Transition Resources */ = {
+			isa = PBXGroup;
+			children = (
+				982A058F1FD9EC6D00CBCCE0 /* Scene.swift */,
+				982A05931FD9ECC600CBCCE0 /* SceneCoordinator.swift */,
+				982A059B1FD9EFCD00CBCCE0 /* BindableType.swift */,
+			);
+			path = "Scene Transition Resources";
+			sourceTree = "<group>";
+		};
+		98A1AFB41FDB1F1D00294013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				982A05991FD9EEB100CBCCE0 /* Prompt.swift */,
+				98CAC8F71FDC6ACF00F0CC09 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98A1AFB91FDB1FF600294013 /* Data Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98A1AFB51FDB1F3100294013 /* PromptDataController.swift */,
+				98CAC8F91FDC6CB400F0CC09 /* UserDataController.swift */,
+			);
+			path = "Data Controllers";
+			sourceTree = "<group>";
+		};
+		98A1AFBA1FDB200C00294013 /* Realm Services */ = {
+			isa = PBXGroup;
+			children = (
+				982A059D1FD9F08600CBCCE0 /* RealmServiceType.swift */,
+				98A1AFC51FDB370800294013 /* RealmLoginManager.swift */,
+			);
+			path = "Realm Services";
+			sourceTree = "<group>";
+		};
+		98A1AFBB1FDB241000294013 /* Prompt Detail */ = {
+			isa = PBXGroup;
+			children = (
+				98A1AFBC1FDB243D00294013 /* PromptDetailViewController.swift */,
+				98A1AFBE1FDB246900294013 /* PromptDetailEngine.swift */,
+			);
+			path = "Prompt Detail";
+			sourceTree = "<group>";
+		};
+		98A1AFC01FDB2B0D00294013 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				98A1AFC11FDB2B2600294013 /* LoginViewController.swift */,
+				98A1AFC31FDB2B3100294013 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 980CB9541FD9E76600D3061A /* Build configuration list for PBXNativeTarget "OutpostRxSwift" */;
 			buildPhases = (
+				802E57BD84A7CB927363CDFE /* [CP] Check Pods Manifest.lock */,
 				980CB9281FD9E76500D3061A /* Sources */,
 				980CB9291FD9E76500D3061A /* Frameworks */,
 				980CB92A1FD9E76500D3061A /* Resources */,
+				918815B0FA377DF4187901F6 /* [CP] Embed Pods Frameworks */,
+				A19D233B9F9AEF9B7C6490B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +400,6 @@
 			files = (
 				980CB93A1FD9E76500D3061A /* LaunchScreen.storyboard in Resources */,
 				980CB9371FD9E76500D3061A /* Assets.xcassets in Resources */,
-				980CB9351FD9E76500D3061A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +419,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		802E57BD84A7CB927363CDFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OutpostRxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		918815B0FA377DF4187901F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OutpostRxSwift/Pods-OutpostRxSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OutpostRxSwift/Pods-OutpostRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A19D233B9F9AEF9B7C6490B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OutpostRxSwift/Pods-OutpostRxSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		980CB9281FD9E76500D3061A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980CB9321FD9E76500D3061A /* ViewController.swift in Sources */,
+				98A1AFC21FDB2B2600294013 /* LoginViewController.swift in Sources */,
+				982A05941FD9ECC600CBCCE0 /* SceneCoordinator.swift in Sources */,
+				98A1AFBF1FDB246900294013 /* PromptDetailEngine.swift in Sources */,
+				982A059A1FD9EEB100CBCCE0 /* Prompt.swift in Sources */,
+				984363EF1FDDB48A0057618C /* CreatePromptViewModel.swift in Sources */,
+				9844B03A1FDA2BD80058C62E /* PromptListEngine.swift in Sources */,
+				982A05901FD9EC6D00CBCCE0 /* Scene.swift in Sources */,
+				9844B03E1FDA38A80058C62E /* PromptTableCell.swift in Sources */,
+				98CAC8F81FDC6ACF00F0CC09 /* User.swift in Sources */,
+				984363ED1FDDB4220057618C /* CreatePromptViewController.swift in Sources */,
+				98A1AFC61FDB370800294013 /* RealmLoginManager.swift in Sources */,
+				982A059E1FD9F08600CBCCE0 /* RealmServiceType.swift in Sources */,
+				98A1AFC41FDB2B3100294013 /* LoginViewModel.swift in Sources */,
+				98A1AFBD1FDB243D00294013 /* PromptDetailViewController.swift in Sources */,
 				980CB9301FD9E76500D3061A /* AppDelegate.swift in Sources */,
+				9844B03C1FDA2FCE0058C62E /* PromptListViewController.swift in Sources */,
+				98A1AFB61FDB1F3100294013 /* PromptDataController.swift in Sources */,
+				9844B0401FDA38D00058C62E /* PromptView.swift in Sources */,
+				98CAC8FA1FDC6CB400F0CC09 /* UserDataController.swift in Sources */,
+				982A059C1FD9EFCD00CBCCE0 /* BindableType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +553,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		980CB9331FD9E76500D3061A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				980CB9341FD9E76500D3061A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		980CB9381FD9E76500D3061A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -424,6 +673,7 @@
 		};
 		980CB9551FD9E76600D3061A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C904DC20D6CF666FCF367A /* Pods-OutpostRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +689,7 @@
 		};
 		980CB9561FD9E76600D3061A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A14735777135C5E5A6B90CB3 /* Pods-OutpostRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
